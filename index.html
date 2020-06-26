@@ -1,89 +1,17 @@
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <!--Import Google Icon Font-->
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    
-    <!-- Compiled and minified CSS -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-
-    <!-- Compiled and minified JavaScript -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-            
-    <title>Quarantine Escape</title>
-    <style>
-        header{
-            background: url(img/scary_man.jpg);
-            background-size: cover;
-            background-position: center;
-            min-height: 900;
-        }
-        @media screen and (max-width: 670px){
-            header{
-                min-height: 500;
-            }
-            
-        }
-    </style>
-</head>
-<body class="grey darken-4">
-
-    <header>
-        <nav class="nav-wrapper transparent">
-            <div class="container">
-                <a href="#" class="brand-logo">Quarantine Escape</a>
-                <a href="#" class="sidenav-trigger" data-target="mobile-links">
-                    <i class="material-icons">menu</i>
-                </a>
-                <ul class="right hide-on-med-and-down">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="rooms.html">Rooms</a></li>
-                    <li><a href="about.html">About</a></li>
-                </ul>
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="styles.css">
+        <script src="gol.js"></script>
+    </head>
+    <body>
+        <div class="container">
+            <div class="buttons">
+                <button id="play">Play</button>
+                <button id="next">Next</button>
             </div>
-        </nav>
-    
-        <ul class="sidenav" id="mobile-links">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="rooms.html">Rooms</a></li>
-            <li><a href="about.html">About</a></li>
-        </ul>
-    </header>
-
-
-    <div class="container">
-        <h2 class="grey-text text-lighten-2 center-align">Welcome To Quarantine Escape! </h2>
-        <p class="white-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec et velit eu felis tempor ultricies id at est. Aliquam erat volutpat. Ut quis tempor dui, ut imperdiet nisl. Curabitur odio nulla, efficitur sed porttitor sed, dictum sit amet leo. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Curabitur maximus felis eget ligula iaculis, eu hendrerit dui bibendum. Vivamus augue mi, pulvinar sed orci ac, efficitur ultrices dui. Praesent ut rhoncus sem. Nunc in tristique diam. Nullam eget nulla dignissim, posuere lacus at, faucibus leo. Nullam viverra finibus mi at fringilla. Nam quis libero eros. Phasellus eu sollicitudin ipsum, quis semper magna. Suspendisse tincidunt arcu sed nunc fringilla, a porta metus rhoncus. Donec interdum consectetur mollis. Aenean a tortor ut leo rutrum vestibulum sit amet quis erat.</p>
-    </div>
-
-    <div class="parallax-container">
-        <div class="parallax">
-            <img src="img/spookeh.jpg" alt="" class="responsive-img">
+            <table class="game-table"></table>
         </div>
-    </div>
-
-
-    <div class="container">
-        <h2 class="grey-text text-lighten-2 center-align">About</h2>
-        <p class="white-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec et velit eu felis tempor ultricies id at est. Aliquam erat volutpat. Ut quis tempor dui, ut imperdiet nisl. Curabitur odio nulla, efficitur sed porttitor sed, dictum sit amet leo. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Curabitur maximus felis eget ligula iaculis, eu hendrerit dui bibendum. Vivamus augue mi, pulvinar sed orci ac, efficitur ultrices dui. Praesent ut rhoncus sem. Nunc in tristique diam. Nullam eget nulla dignissim, posuere lacus at, faucibus leo. Nullam viverra finibus mi at fringilla. Nam quis libero eros. Phasellus eu sollicitudin ipsum, quis semper magna. Suspendisse tincidunt arcu sed nunc fringilla, a porta metus rhoncus. Donec interdum consectetur mollis. Aenean a tortor ut leo rutrum vestibulum sit amet quis erat.</p>
-        <p class="white-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec et velit eu felis tempor ultricies id at est. Aliquam erat volutpat. Ut quis tempor dui, ut imperdiet nisl. Curabitur odio nulla, efficitur sed porttitor sed, dictum sit amet leo. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Curabitur maximus felis eget ligula iaculis, eu hendrerit dui bibendum. Vivamus augue mi, pulvinar sed orci ac, efficitur ultrices dui. Praesent ut rhoncus sem. Nunc in tristique diam. Nullam eget nulla dignissim, posuere lacus at, faucibus leo. Nullam viverra finibus mi at fringilla. Nam quis libero eros. Phasellus eu sollicitudin ipsum, quis semper magna. Suspendisse tincidunt arcu sed nunc fringilla, a porta metus rhoncus. Donec interdum consectetur mollis. Aenean a tortor ut leo rutrum vestibulum sit amet quis erat.</p>
-        <p class="white-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec et velit eu felis tempor ultricies id at est. Aliquam erat volutpat. Ut quis tempor dui, ut imperdiet nisl. Curabitur odio nulla, efficitur sed porttitor sed, dictum sit amet leo. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Curabitur maximus felis eget ligula iaculis, eu hendrerit dui bibendum. Vivamus augue mi, pulvinar sed orci ac, efficitur ultrices dui. Praesent ut rhoncus sem. Nunc in tristique diam. Nullam eget nulla dignissim, posuere lacus at, faucibus leo. Nullam viverra finibus mi at fringilla. Nam quis libero eros. Phasellus eu sollicitudin ipsum, quis semper magna. Suspendisse tincidunt arcu sed nunc fringilla, a porta metus rhoncus. Donec interdum consectetur mollis. Aenean a tortor ut leo rutrum vestibulum sit amet quis erat.</p>
-        <p class="white-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec et velit eu felis tempor ultricies id at est. Aliquam erat volutpat. Ut quis tempor dui, ut imperdiet nisl. Curabitur odio nulla, efficitur sed porttitor sed, dictum sit amet leo. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Curabitur maximus felis eget ligula iaculis, eu hendrerit dui bibendum. Vivamus augue mi, pulvinar sed orci ac, efficitur ultrices dui. Praesent ut rhoncus sem. Nunc in tristique diam. Nullam eget nulla dignissim, posuere lacus at, faucibus leo. Nullam viverra finibus mi at fringilla. Nam quis libero eros. Phasellus eu sollicitudin ipsum, quis semper magna. Suspendisse tincidunt arcu sed nunc fringilla, a porta metus rhoncus. Donec interdum consectetur mollis. Aenean a tortor ut leo rutrum vestibulum sit amet quis erat.</p>
-        <p class="white-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec et velit eu felis tempor ultricies id at est. Aliquam erat volutpat. Ut quis tempor dui, ut imperdiet nisl. Curabitur odio nulla, efficitur sed porttitor sed, dictum sit amet leo. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Curabitur maximus felis eget ligula iaculis, eu hendrerit dui bibendum. Vivamus augue mi, pulvinar sed orci ac, efficitur ultrices dui. Praesent ut rhoncus sem. Nunc in tristique diam. Nullam eget nulla dignissim, posuere lacus at, faucibus leo. Nullam viverra finibus mi at fringilla. Nam quis libero eros. Phasellus eu sollicitudin ipsum, quis semper magna. Suspendisse tincidunt arcu sed nunc fringilla, a porta metus rhoncus. Donec interdum consectetur mollis. Aenean a tortor ut leo rutrum vestibulum sit amet quis erat.</p>
         
-    </div>
-
-
-    <script src="https://code.jquery.com/jquery-3.5.0.min.js"></script>
-    <!-- Compiled and minified JavaScript -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-    <script>
-        $(document).ready(function(){
-            $('.sidenav').sidenav();
-            $('.parallax').parallax();
-        });
-    </script>
-</body>
+    </body>
 </html>
