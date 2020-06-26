@@ -6,7 +6,7 @@ body {
   position: absolute;
   width: 100%;
   left: 0;
-  margin-top: -250px;
+  margin-top: -500px;
   top: 50%;
 }
 
@@ -16,8 +16,8 @@ body {
 
 .game-table {
   background-color: #d8d8d8;
-  width: 500px;
-  height: 500px;
+  width: 1000px;
+  height: 1000px;
   margin: 0 auto;
 }
 
